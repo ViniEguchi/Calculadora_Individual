@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Individual</title>
+
+    <script src="script_Indv.js" type="text/Javascript"></script>
+
+    <link rel="stylesheet" href="style_Indv.css">
+</head>
+
+<style>
+    body {
+        background-image: url(./img/Lufa-Lufa.jpg);
+        background-size: cover;
+        color: magenta;
+    }
+
+    button:hover {
+        transition: all 0.5s ease-in-out;
+        height: 50px;
+        width: 140px;
+        opacity: 0.9;
+        background-color: darkorchid;
+    }
+</style>
+
+<body>
+    <h1>
+        Onde seus moradores são justos e leais <br>
+        Pacientes, sinceros, sem medo da dor.
+    </h1>
+
+    <header>
+
+    </header>
+    
+    <div class="card">
+        <div class="item1">
+            <span>Número:</span> <input type="text" id="ipt_numero">
+        </div>
+        
+        <div class="item2">
+            <label for="Numero">Qual a base desse numero?</label>
+            <select id="ipt_base" name="Numero">
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binario</option>
+                <option value="octal">Octal</option>
+                <option value="hexa">Hexadecimal</option>
+            </select>
+        </div>
+        <button onclick="converter()">Converter Base</button>
+    
+        <div class="Resposta" id="div_mensagem"></div>
+    </div>
+
+    <div class="rodape">
+        <a href="./Index.html">
+            <button>Mudar o tema</button>
+        </a>
+    </div>
+</body>
+</html>
