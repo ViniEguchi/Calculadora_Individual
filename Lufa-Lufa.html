@@ -24,6 +24,49 @@
         opacity: 0.9;
         background-color: darkorchid;
     }
+
+    input {
+        background-color: darkorange;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 25px;
+        width: 300px;
+        padding-bottom: 20px;
+        align-items: center;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    .item1 {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .item2 {
+        order: 2;
+    }
+
+    .Resposta {
+        order: 4;
+        opacity: 90%;
+    }
+
+    .botao {
+        margin-top: 30px;
+        order: 3;
+    }
+
+    select {
+        background-color: darkorange;
+    }
 </style>
 
 <body>
@@ -42,7 +85,7 @@
         </div>
         
         <div class="item2">
-            <label for="Numero">Qual a base desse numero?</label>
+            <label for="Numero">Qual a base desse número?</label>
             <select id="ipt_base" name="Numero">
                 <option value="decimal">Decimal</option>
                 <option value="binario">Binario</option>
@@ -50,7 +93,10 @@
                 <option value="hexa">Hexadecimal</option>
             </select>
         </div>
-        <button onclick="converter()">Converter Base</button>
+
+        <div class="botao">
+            <button onclick="converter()">Converter Base</button>
+        </div>
     
         <div class="Resposta" id="div_mensagem"></div>
     </div>
